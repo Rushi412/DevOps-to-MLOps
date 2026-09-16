@@ -1,0 +1,22 @@
+# Normalise line endings. Without this, files committed from Windows arrive
+# with CRLF for anyone cloning on Linux or macOS, and every diff looks like
+# the whole file changed.
+* text=auto eol=lf
+
+*.py    text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.json  text eol=lf
+*.csv   text eol=lf
+*.cfg   text eol=lf
+*.toml  text eol=lf
+Dockerfile text eol=lf
+
+# Binary: never touch, never diff.
+*.pkl     binary
+*.joblib  binary
+*.parquet binary
+*.png     binary
+*.jpg     binary
