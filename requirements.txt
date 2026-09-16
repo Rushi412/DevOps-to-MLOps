@@ -1,8 +1,6 @@
-# Stage 01 — skeleton + baseline.
-# Loose pins for now; stage 02 replaces this with a proper lockfile,
-# because "same code, different library version -> different model"
-# is one of the four broken assumptions (curriculum module 00).
+# Stage 02 — training pipeline + experiment tracking.
 numpy>=2.1,<3
 pandas>=2.2,<3
 scikit-learn>=1.5,<2
+mlflow>=2.16
 pytest>=8.0
